@@ -34,6 +34,10 @@ gem 'devise'
 gem 'carrierwave'
 
 gem 'haml'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
