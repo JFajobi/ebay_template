@@ -1,0 +1,7 @@
+- if @templates.size == 0
+  %h1 sorry it seems like we do not have any templates at this time 
+- else
+  - @templates.all.each do |temp|
+    =link_to temp.name, "template/#{temp.name}"
+  
+  
