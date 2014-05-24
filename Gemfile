@@ -30,10 +30,14 @@ gem 'spring',        group: :development
 gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
 
 gem 'devise'
-
+# used for image uploading
 gem 'carrierwave'
 
 gem 'haml'
+# used for a view wysiwyg
+gem 'mercury-rails', :git => "https://github.com/jejacks0n/mercury.git", :branch => 'master'
+
+gem 'paper_trail', '~> 3.0.2'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
@@ -50,3 +54,4 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'paperclip'
