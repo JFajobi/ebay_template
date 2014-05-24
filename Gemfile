@@ -33,11 +33,15 @@ gem 'devise'
 # used for image uploading
 gem 'carrierwave'
 
+gem 'inline-style'
+
 gem 'haml'
 # used for a view wysiwyg
 gem 'mercury-rails', :git => "https://github.com/jejacks0n/mercury.git", :branch => 'master'
 
 gem 'paper_trail', '~> 3.0.2'
+
+gem 'pry', group: :development
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'

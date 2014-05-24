@@ -450,3 +450,12 @@ window.Mercury = {
   debug: false
 
 };
+
+$(window).on('mercury:ready', function() {
+  $('#mercury_iframe').contents().find('#edit_template').hide();
+});
+
+$(window).on('mercury:saved', function() {
+  $('#mercury_iframe').contents().find('#edit_template').hide();
+  window.location = "http://localhost:3000/completed_page"
+});

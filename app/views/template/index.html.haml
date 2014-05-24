@@ -3,5 +3,6 @@
 - else
   - @templates.all.each do |temp|
     =link_to temp.name, "/template/#{temp.name}"
+    %div{id: temp.name} preview #{temp.name} page
   
   
