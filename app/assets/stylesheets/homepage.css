@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: #3ec7c2;
+  /*background-color: #3ec7c2;*/
 }
 
 header{
@@ -39,4 +39,45 @@ a:hover{
 
 .first-button{
   /*border-left: 1px solid rgba(0,0,0, .5);*/
+}
+
+/* Page Content */
+
+.color-text{
+  color: #3ec7c2;
+}
+
+#head-text{
+  font-size: 5em;
+  font-weight: 900;
+}
+
+#ebay-span{
+  color: #3a3b3d;
+}
+
+.color-blue{
+  color: #3ec7c2;
+}
+
+#outline-text{
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+#no-code{
+  border-bottom: 4px solid #3ec7c2;
+}
+
+#code-description{
+  color: #3a3b3d;
+  margin-top: 150px;
+}
+
+#bottom-text{
+  margin-top: 100px;
 }
