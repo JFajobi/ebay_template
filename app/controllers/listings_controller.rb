@@ -1,5 +1,10 @@
 class ListingsController < ApplicationController
 
+  def index
+    @listings = current_user.listings.all
+    
+  end
+
   def create
     listing = current_user.listings.new
     listing.name  = params["listing"]["name"]

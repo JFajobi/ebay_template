@@ -7,16 +7,15 @@
   - if current_user
     %h2.color-blue.col-md-12#save-header Click Here To Save This Listing
   - else
-    %h1 Not signed in 
+    %h2.color-blue.col-md-12#save-header Create an account above so next time you can save your listings
 
 
-
-.row
-  
-  = form_for @listing do |f|
-    .form-group
-      %div
-        = f.text_field :name, :placeholder => "Enter Listing Name Here Then Hit Enter", :class => "text_field form-control col-md-offset-4", :id => "listing-name"
+- if current_user
+  .row
+    = form_for @listing do |f|
+      .form-group
+        %div
+          = f.text_field :name, :placeholder => "Enter Listing Name Here Then Hit Enter", :class => "text_field form-control col-md-offset-4", :id => "listing-name"
   
 
 :javascript
