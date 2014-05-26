@@ -1,6 +1,11 @@
 /* Header and header content styling */
 #header-row{
-  border-bottom: 1px solid rgba(0,0,0, .1);
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0, .5) 
+}
+
+body{
+  background-color: #3ec7c2;
 }
 
 header{
@@ -23,19 +28,15 @@ header{
 a{transition: color .2s ease;}
 
 a:hover{
-  color: white;
+  color: #3ec7c2;
   text-decoration: none;
 }
 
 .action-buttons{
-  border-right: 1px solid rgba(0,0,0, .1);
-  transition: background-color 0.5s ease;
-}
-
-.action-buttons:hover{
-  background-color: #fd661e;
+  /*border-right: 1px solid rgba(0,0,0, .5);*/
+  /*transition: background-color 0.5s ease;*/
 }
 
 .first-button{
-  border-left: 1px solid rgba(0,0,0, .1);
+  /*border-left: 1px solid rgba(0,0,0, .5);*/
 }

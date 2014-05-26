@@ -11,7 +11,7 @@
     <header>
       <div id="header-row" class="row">
         <div class="col-md-1 col-md-offset-1 header-buttons" id="logo">
-          <%= image_tag("logo.png") %>
+          <%= link_to image_tag("logo.png"), "/" %>
         </div>
         <% if !current_user %>
           <div class="first-button col-md-2 col-md-offset-4 header-buttons action-buttons">
@@ -36,7 +36,11 @@
         <% end %>
       </div>
     </header>
-    <%= yield %>
+
+    <div class="page-content">
+      <%= yield %>  
+    </div>
+    
   </div>
 </body>
 </html>
