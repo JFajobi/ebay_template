@@ -15,7 +15,7 @@
         </div>
         <% if !current_user %>
           <div class="first-button col-md-2 col-md-offset-4 header-buttons action-buttons">
-            <%= link_to "Create Ebay Listing", "/templates" %>
+            <%= link_to "Create A Ebay Listing", "/templates" %>
           </div>
           <div class="col-md-2 header-buttons action-buttons">
             <%= link_to "Create Account", new_user_registration_path %>
@@ -25,7 +25,7 @@
           </div>
         <% else %>
           <div class="first-button col-md-2 col-md-offset-4 header-buttons action-buttons">
-            <%= link_to "Create Ebay Listing", "/templates" %>
+            <%= link_to "Create A Ebay Listing", "/templates" %>
           </div>
           <div class="col-md-2 header-buttons action-buttons">
             <%= link_to "View Listings", "/listings" %>
@@ -36,6 +36,12 @@
         <% end %>
       </div>
     </header>
+    <% flash.each do |name, msg| %>
+      <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+      <a class="close" data-dismiss="alert">×</a>
+    <%= msg %>
+  </div>
+<% end %>
     <%= yield %>  
   </div>
 </body>

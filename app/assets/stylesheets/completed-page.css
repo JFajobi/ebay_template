@@ -1,9 +1,12 @@
 #listing-name{
-  width: 300px;
+  width: 360px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #save-header{
   text-align: center;
+  margin-top: 50px;
 }
 
 #save-button{

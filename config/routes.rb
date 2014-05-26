@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'template/:template_name', to: 'template#show'
   put 'template/:template_name', to: 'template#create_listing'
   get 'completed_page', to: 'template#scrape_page'
+  resources :listings
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

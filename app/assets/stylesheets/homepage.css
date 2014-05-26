@@ -43,6 +43,13 @@ a:hover{
 
 /* Page Content */
 
+.alert{
+  background-color: #3ec7c2;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
 .color-text{
   color: #3ec7c2;
 }

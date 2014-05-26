@@ -14,7 +14,7 @@ class TemplateController < ApplicationController
     
     
     # Once rendered user is redirected to "/completed_page"
-    # redirection is handled in mercury.js file
+    # redirection is handled in the mercury.js file
     render :text => '{}'
   end
 
@@ -25,6 +25,10 @@ class TemplateController < ApplicationController
 
     TemplateService.construct_listing_page(page_html_content, template_name)
     @html = TemplateService.inline_css_styles(html_filepath, template_name)
+
+    
+    @listing = current_user.listings.new if current_user
+    
 
     render "template/scrape_page"
   end

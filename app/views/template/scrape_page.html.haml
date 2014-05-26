@@ -9,18 +9,22 @@
   - else
     %h1 Not signed in 
 
+
+
 .row
-  %form#save-listing-form.hidden{:role => "form"}
+  
+  = form_for @listing do |f|
     .form-group
-      %input.form-control.col-md-offset-4#listing-name{:type => "text", :placeholder => "Enter Listing Name Here"}
-      %button#save-button{:type => "submit"} Save Listing
+      %div
+        = f.text_field :name, :placeholder => "Enter Listing Name Here Then Hit Enter", :class => "text_field form-control col-md-offset-4", :id => "listing-name"
+  
 
 :javascript
   $(document).ready( function() {
 
     $('#save-header').click(function(){
       $('#save-header').hide();
-      $('form').removeClass('hidden');
+      $('.form-group').removeClass('hidden');
     })
 
   } );
