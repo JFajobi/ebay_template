@@ -24,9 +24,9 @@ class TemplateController < ApplicationController
     html_filepath     = Rails.root.join("tmp","#{template_name}.html").to_s
 
     TemplateService.construct_listing_page(page_html_content, template_name)
-    html = TemplateService.inline_css_styles(html_filepath, template_name)
+    @html = TemplateService.inline_css_styles(html_filepath, template_name)
 
-    render inline: html
+    render "template/scrape_page"
   end
 
 end

@@ -1,1 +1,9 @@
-= @page_content
+%h3 Copy the html code in the bottom and paste into your ebay list
+
+%textarea.form-control{:rows => "15"}
+  = @html
+
+- if current_user
+  %h1 signed in
+- else
+  %h1 Not signed in 

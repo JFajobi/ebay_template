@@ -7,7 +7,7 @@ class TemplateService
       
       File.open(Rails.root.join("tmp", "#{template_name}.html").to_s, 'w') do |file|
         file.write(html_content)
-        file.write("\n<style type='text/css'>\n#{css}\n</style>")
+        file.write("<style type='text/css'>#{css}</style>")
       end
 
 

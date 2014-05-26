@@ -1,6 +1,8 @@
 #primary(data-mercury="full")
-  .box_test
-  %h1 yay it works
+  .row
+    .box_test.col-md-1
+    %h1.col-md-1 yay it works
+    %button.btn.btn-info test button
 
 
 = link_to "edit template", "/editor" + request.path, :id => "edit_template"
