@@ -4,6 +4,15 @@
   margin-top: 50px;
 }
 
+#create-account{
+  color: #3a3b3d;
+  transition: color .2s ease;
+}
+
+#create-account:hover{
+  color: #3ec7c2;
+}
+
 #save-header{
   text-align: center;
   margin-top: 50px;

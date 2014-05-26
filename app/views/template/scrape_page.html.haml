@@ -7,7 +7,9 @@
   - if current_user
     %h2.color-blue.col-md-12#save-header Click Here To Save This Listing
   - else
-    %h2.color-blue.col-md-12#save-header Create an account above so next time you can save your listings
+    %h2.color-blue.col-md-12#save-header 
+      %a#create-account{:href => "/users/sign_up"} Create an account
+      so next time you can save your listings
 
 
 - if current_user
