@@ -10,7 +10,7 @@ class TemplateController < ApplicationController
 
   def create_listing
     cookies[:website_markup] = params["content"]["primary"]["value"]
-    cookies[:template_name]  = params["template_name"] 
+    cookies[:template_name]  = params["template_name"]
     
     
     # Once rendered user is redirected to "/completed_page"
@@ -25,6 +25,8 @@ class TemplateController < ApplicationController
 
     TemplateService.construct_listing_page(page_html_content, template_name)
     @html = TemplateService.inline_css_styles(html_filepath, template_name)
+
+    cookies[:website_markup] = @html
 
     
     @listing = current_user.listings.new if current_user

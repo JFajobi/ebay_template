@@ -1,4 +1,9 @@
+- if @listings.size == 0
+  %h3.color-blue.col-md-12#save-header
+    Sorry you do not have any listings at this time click on 'Create A Ebay Listing' above to get started
+
 - @listings.each do |listing|
-  %h3.color-blue
-    = listing.name
+  %a{:href => "listings/#{listing.id}"}
+    %h3.color-blue
+      = listing.name
   

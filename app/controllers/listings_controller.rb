@@ -2,7 +2,11 @@ class ListingsController < ApplicationController
 
   def index
     @listings = current_user.listings.all
-    
+
+  end
+
+  def show
+    @html = current_user.listings.find(params[:id]).html
   end
 
   def create
