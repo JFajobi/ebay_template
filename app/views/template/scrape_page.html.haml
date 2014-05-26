@@ -1,9 +1,26 @@
-%h3 Copy the html code in the bottom and paste into your ebay list
+%h3.col-md-12#save-instructions Copy the generated code below into your ebay listing and your done!
 
 %textarea.form-control{:rows => "15"}
   = @html
 
-- if current_user
-  %h1 signed in
-- else
-  %h1 Not signed in 
+.row
+  - if current_user
+    %h2.color-blue.col-md-12#save-header Click Here To Save This Listing
+  - else
+    %h1 Not signed in 
+
+.row
+  %form#save-listing-form.hidden{:role => "form"}
+    .form-group
+      %input.form-control.col-md-offset-4#listing-name{:type => "text", :placeholder => "Enter Listing Name Here"}
+      %button#save-button{:type => "submit"} Save Listing
+
+:javascript
+  $(document).ready( function() {
+
+    $('#save-header').click(function(){
+      $('#save-header').hide();
+      $('form').removeClass('hidden');
+    })
+
+  } );

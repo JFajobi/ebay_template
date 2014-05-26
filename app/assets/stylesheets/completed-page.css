@@ -1,0 +1,27 @@
+#listing-name{
+  width: 300px;
+}
+
+#save-header{
+  text-align: center;
+}
+
+#save-button{
+  background-color: white;
+  height: 35px;
+  border: 2px solid rgba(0,0,0, .15);
+  border-radius: 3px;
+  color: #3ec7c2;
+}
+
+#save-instructions{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #3ec7c2;
+}
+
+#save-listing-form{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

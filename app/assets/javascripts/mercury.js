@@ -453,6 +453,7 @@ window.Mercury = {
 
 $(window).on('mercury:ready', function() {
   $('#mercury_iframe').contents().find('#edit_template').hide();
+  $('#mercury_iframe').contents().find('#header-row').hide();
 });
 
 $(window).on('mercury:saved', function() {
