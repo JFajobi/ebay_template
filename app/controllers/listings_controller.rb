@@ -6,11 +6,14 @@ class ListingsController < ApplicationController
   end
 
   def show
-    @html = current_user.listings.find(params[:id]).html
+    listing       = current_user.listings.find(params[:id])
+    @html         = listing.html
+    @listing_name = listing.name
+
   end
 
   def create
-    listing = current_user.listings.new
+    listing       = current_user.listings.new
     listing.name  = params["listing"]["name"]
     listing.html  = cookies[:website_markup].html_safe
     listing.save

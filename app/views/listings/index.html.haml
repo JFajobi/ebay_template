@@ -2,8 +2,9 @@
   %h3.color-blue.col-md-12#save-header
     Sorry you do not have any listings at this time click on 'Create A Ebay Listing' above to get started
 
+.div.spacer
 - @listings.each do |listing|
-  %a{:href => "listings/#{listing.id}"}
-    %h3.color-blue
+  %div.display-blocks
+    %a{:href => "listings/#{listing.id}"}
       = listing.name
-  
+    

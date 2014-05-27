@@ -32,6 +32,11 @@ a:hover{
   text-decoration: none;
 }
 
+.display-blocks a:hover{
+  color: #3ec7c2;
+  text-decoration: none;
+}
+
 .action-buttons{
   /*border-right: 1px solid rgba(0,0,0, .5);*/
   /*transition: background-color 0.5s ease;*/
@@ -67,13 +72,8 @@ a:hover{
   color: #3ec7c2;
 }
 
-#outline-text{
-  color: white;
-  text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+.spacer{
+  height: 50px;
 }
 
 #no-code{
@@ -87,4 +87,24 @@ a:hover{
 
 #bottom-text{
   margin-top: 100px;
+}
+
+.display-blocks{
+  color: black;
+  width: 190px;
+  height: 80px;
+  border: 2px solid #3ec7c2;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+#black-text{
+  color: black;
+}
+
+.display-blocks a{
+  color: black;
 }

@@ -15,7 +15,7 @@
 - if current_user
   .row
     = form_for @listing do |f|
-      .form-group
+      .form-group.hidden
         %div
           = f.text_field :name, :placeholder => "Enter Listing Name Here Then Hit Enter", :class => "text_field form-control col-md-offset-4", :id => "listing-name"
   
