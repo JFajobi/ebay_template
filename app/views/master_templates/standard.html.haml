@@ -1,9 +1,18 @@
-#primary(data-mercury="full")
-  .row
-    .box_test.col-md-1
-    %h1.col-md-1 yay it works
-    %button.btn.btn-info test button
-
-
 = link_to "edit template", "/editor" + request.path, :id => "edit_template"
+%section.template
+  .main-summary
+    %h4 Title of your listing
+    %h2 Price of product $200 Bucks
+  %section.main-body
+    .main-picture
+      %img{:src => "http://d3gqasl9vmjfd8.cloudfront.net/c8e3b27f-ece9-4761-97b0-078ea018c506.jpg"}
+    %article.details
+      %header
+        %h4 title of your product
+      %section.content
+        %p Cool bold description: "this is the best product in the world!!! you must get it "
+        %p more descriptions: " describe the model, pros about the products"
+        %p possibly the last section for stats: "maybe go into the condition of the item, new, used, open box?"
+    
+
 

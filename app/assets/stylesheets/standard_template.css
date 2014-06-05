@@ -1,6 +1,48 @@
-.box_test{
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  border:1px solid black;
+.main-picture{
+  position: absolute;
+  margin-left: 2%;
+}
+
+section.template{
+  border-top: 5px solid #f4f4f4;
+}
+
+.details{
+  position: absolute;
+}
+
+article.details{
+  height: 300px;
+  width: 23%;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+article header{
+  text-align: center;
+  height: 35px;
+}
+
+section.content{
+  margin-left: 7px;
+}
+
+.main-picture{
+  overflow: hidden;
+  width: 67%;
+  /*display: inline-block;*/
+  float: left;
+}
+
+.main-summary{
+  /*display: inline-block;*/
+  width: 100%;
+}
+
+.main-body{
+  margin-top: 20px;
+}
+
+section.main-body{
+  margin-left: 5%;
 }
