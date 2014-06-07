@@ -1,15 +1,16 @@
 = link_to "edit template", "/editor" + request.path, :id => "edit_template"
-%section.template
-  .main-summary(data-mercury="full")
+
+%section.template#primary(data-mercury="full")
+  .main-summary#top(data-mercury="full")
     %h1 $200
     %h4 (New Open Box)
   %section.main-body
     .main-picture
       %img#demo-image{:src => "http://compass.xbox.com/assets/c5/12/c5127868-a74d-4b98-bc58-54f290b36daf.png?n=promo-xbox-one-all-hardware-457x364.png"}
-      %div#image(data-mercury="full")
+      %div#middle(data-mercury="full")
       
     %article.details
-      %section.content(data-mercury="full")
+      %section.content#bottom(data-mercury="full")
         .quick-notes $700 msrp nearly 80% off
         .quick-notes#middle Limited Time Only
         .quick-notes Includes 2 Games!

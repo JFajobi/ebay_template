@@ -455,7 +455,7 @@ $(window).on('mercury:ready', function() {
   $('#mercury_iframe').contents().find('#edit_template').hide();
   $('#mercury_iframe').contents().find('#header-row').hide();
   $('#mercury_iframe').contents().find('#demo-image').hide();
-  $('#mercury_iframe').contents().find('#image').html("ERASE AND ENTER IMAGE HERE");
+  $('#mercury_iframe').contents().find('#middle').html("HIGHLIGHT THIS TEXT AND CLICK ON MEDIA ABOVE TO ENTER IMAGE HERE");
 });
 
 $(window).on('mercury:saved', function() {
