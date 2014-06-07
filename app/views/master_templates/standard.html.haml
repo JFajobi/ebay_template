@@ -1,18 +1,16 @@
 = link_to "edit template", "/editor" + request.path, :id => "edit_template"
 %section.template
-  .main-summary
-    %h4 Title of your listing
-    %h2 Price of product $200 Bucks
+  .main-summary(data-mercury="full")
+    %h1 $200
+    %h4 (New Open Box)
   %section.main-body
     .main-picture
-      %img{:src => "http://d3gqasl9vmjfd8.cloudfront.net/c8e3b27f-ece9-4761-97b0-078ea018c506.jpg"}
+      %img#demo-image{:src => "http://compass.xbox.com/assets/c5/12/c5127868-a74d-4b98-bc58-54f290b36daf.png?n=promo-xbox-one-all-hardware-457x364.png"}
+      %div#image(data-mercury="full")
+      
     %article.details
-      %header
-        %h4 title of your product
-      %section.content
-        %p Cool bold description: "this is the best product in the world!!! you must get it "
-        %p more descriptions: " describe the model, pros about the products"
-        %p possibly the last section for stats: "maybe go into the condition of the item, new, used, open box?"
-    
-
+      %section.content(data-mercury="full")
+        .quick-notes $700 msrp nearly 80% off
+        .quick-notes#middle Limited Time Only
+        .quick-notes Includes 2 Games!
 
